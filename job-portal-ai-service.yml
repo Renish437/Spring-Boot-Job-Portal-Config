@@ -1,9 +1,6 @@
 server:
   port: 6000
 
-spring:
-  config:
-    import: optional:file:.env.properties
 eureka:
     client:
         fetch-registry: true
