@@ -2,8 +2,7 @@ server:
   port: 5001
 
 spring:
-  application:
-    name: job-portal-user-service
+
 
 
   messages:
@@ -12,7 +11,7 @@ spring:
     fallback-to-system-locale: false
 
   datasource:
-    url: jdbc:postgresql://job-portal-userdb:5432/springboot_job_portal_userdb
+    url: jdbc:postgresql://userdb:5432/springboot_job_portal_userdb
     username: postgres
     password: postgres123
     driver-class-name: org.postgresql.Driver
@@ -32,6 +31,6 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://job-portal-discovery:8761/eureka/
+      defaultZone: http://discovery:8761/eureka/
   instance:
     prefer-ip-address: true
