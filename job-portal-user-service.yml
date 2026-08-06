@@ -11,7 +11,7 @@ spring:
     fallback-to-system-locale: false
 
   datasource:
-    url: jdbc:postgresql://userdb:5432/springboot_job_portal_userdb
+    url: jdbc:postgresql://localhost:5432/springboot_job_portal_userdb
     username: postgres
     password: postgres123
     driver-class-name: org.postgresql.Driver
@@ -31,6 +31,6 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true

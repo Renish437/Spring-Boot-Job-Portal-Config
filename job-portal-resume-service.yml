@@ -13,7 +13,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
   datasource:
-    url: jdbc:postgresql://resumedb:5432/springboot_job_portal_resumedb
+    url: jdbc:postgresql://localhost:5432/springboot_job_portal_resumedb
     username: postgres
     password: postgres123
     driver-class-name: org.postgresql.Driver
@@ -23,6 +23,6 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
