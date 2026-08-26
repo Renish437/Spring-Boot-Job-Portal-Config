@@ -1,5 +1,13 @@
 server:
   port: 5002
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+  server-url: http://localhost:5000
+
 spring:
  
 

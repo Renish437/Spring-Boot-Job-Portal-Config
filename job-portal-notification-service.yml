@@ -1,5 +1,12 @@
 server:
   port: 5008
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+  server-url: http://localhost:5000
 eureka:
   client:
     fetch-registry: true
