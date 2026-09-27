@@ -22,7 +22,7 @@ spring:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
 
     datasource:
-        url: jdbc:postgresql://localhost:5432/springboot_job_portal_applicationdb
+        url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://applicationdb:5432/springboot_job_portal_applicationdb}
         username: postgres
         password: postgres123
         driver-class-name: org.postgresql.Driver
@@ -31,8 +31,12 @@ eureka:
     client:
         fetch-registry: true
         register-with-eureka: true
+        initial-instance-info-replication-interval-seconds: 5
+        registry-fetch-interval-seconds: 5
         service-url:
             defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://localhost:8761/eureka/}
     instance:
         prefer-ip-address: true
+        lease-renewal-interval-in-seconds: 10
+        lease-expiration-duration-in-seconds: 30
 
