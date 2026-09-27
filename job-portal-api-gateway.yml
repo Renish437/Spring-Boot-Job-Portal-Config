@@ -1,6 +1,43 @@
 server:
   port: 5000
-  
+
+springdoc:
+    api-docs:
+      enabled: true
+      path: /v3/api-docs
+    swagger-ui:
+      enabled: true
+      path: /swagger-ui.html
+      urls:
+        - name: User Service – Registration, login & profile
+          url: /user-service/v3/api-docs
+        - name: Company Service - Company profiles & verification
+          url: /company-service/v3/api-docs
+        - name: Job Service – Job postings, categories & skills
+          url: /job-service/v3/api-docs
+        - name: Application Service – Apply & track applications
+          url: /application-service/v3/api-docs
+        - name: Resume Service – Resume builder & experience
+          url: /resume-service/v3/api-docs
+        - name: Preference Service – Job preferences & settings
+          url: /preference-service/v3/api-docs
+        - name: AI Service – Resume analysis & job matching
+          url: /ai-service/v3/api-docs
+        - name: Order Service – Orders & transactions
+          url: /order-service/v3/api-docs
+        - name: Subscription Service – Subscriptions & plans
+          url: /subscription-service/v3/api-docs
+        - name: Payment Service – Payments & checkout
+          url: /payment-service/v3/api-docs
+        - name: Setting Service – App & user settings
+          url: /setting-service/v3/api-docs
+        - name: Wallet Service – Wallet management & transactions
+          url: /wallet-service/v3/api-docs
+        - name: Notification Service – Email & push notifications
+          url: /notification-service/v3/api-docs
+      try-it-out-enabled: true
+      filter: true
+      display-request-duration: true
 
 eureka:
     client:
