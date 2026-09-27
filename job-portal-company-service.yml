@@ -6,9 +6,7 @@ springdoc:
     enabled: true
   swagger-ui:
     enabled: true
-  servers:
-    - url: http://localhost:5000
-      description: API Gateway
+  server-url: http://localhost:5000
 
 spring:
  
