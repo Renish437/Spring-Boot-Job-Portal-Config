@@ -6,11 +6,11 @@ springdoc:
         enabled: true
     swagger-ui:
         enabled: true
-    server-url: http://localhost:5000
+    servers:
+        - url: http://localhost:5000
+          description: API Gateway
 
 spring:
-
-
     jpa:
         hibernate:
             ddl-auto: update
