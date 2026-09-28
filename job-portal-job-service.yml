@@ -34,7 +34,7 @@ eureka:
       defaultZone: http://discovery:8761/eureka/
   instance:
     prefer-ip-address: false
-    hostname: job-service
+    hostname: job-portal-job-service
     health-check-url-path: /actuator/health
 
 management:

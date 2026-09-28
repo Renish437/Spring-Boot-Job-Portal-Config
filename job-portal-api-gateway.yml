@@ -48,5 +48,5 @@ eureka:
             defaultZone: http://discovery:8761/eureka/
     instance:
         prefer-ip-address: false
-        hostname: api-gateway
+        hostname: job-portal-api-gateway
 
