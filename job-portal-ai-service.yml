@@ -14,7 +14,8 @@ eureka:
         service-url:
             defaultZone: http://discovery:8761/eureka/
     instance:
-        prefer-ip-address: true
+        prefer-ip-address: false
+        hostname: ai-service
         health-check-url-path: /actuator/health
 
 management:
