@@ -30,16 +30,16 @@ eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
-    registry-fetch-interval-seconds: 5
-    initial-instance-info-replication-interval-seconds: 2
-    instance-info-replication-interval-seconds: 5
+    registry-fetch-interval-seconds: 10
+    initial-instance-info-replication-interval-seconds: 5
+    instance-info-replication-interval-seconds: 10
     service-url:
       defaultZone: http://discovery:8761/eureka/
   instance:
     prefer-ip-address: false
     hostname: job-portal-resume-service
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
     health-check-url-path: /actuator/health
 
 management:
