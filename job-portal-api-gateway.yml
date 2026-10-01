@@ -9,6 +9,7 @@ springdoc:
     swagger-ui:
       enabled: true
       path: /swagger-ui.html
+      override-with-servlet-based-server: false
       urls:
         - name: User Service – Registration, login & profile
           url: /user-service/v3/api-docs
